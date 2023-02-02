@@ -50,7 +50,7 @@ const Navbar = () => {
               </div>
             </div>
             <div className='border-b border-gray-400 my-4'>
-              <p>Let's build something awesome together</p>
+              <p>Let&apos;s build something awesome together</p>
             </div>
           </div>
           <div className='py-4 flex flex-col'>
@@ -72,7 +72,7 @@ const Navbar = () => {
               </Link>
             </ul>
             <div className='pt-10'>
-              <p className='uppercase tracking-widest text-gray-400' > lets connect</p>
+              <p className='uppercase tracking-widest text-gray-400' > let&apos;s connect</p>
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500'>
                 <FaLinkedinIn />

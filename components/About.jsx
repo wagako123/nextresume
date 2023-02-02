@@ -7,13 +7,13 @@ const About = () => {
             <div className='col-span-2'>
                 <p className='py-4 uppercase text-2xl tracking-widest text-[#545454]'>About</p>
                 <h2 className='py-4'>Who am I</h2>
-                <p className='text-gray-700 py-2'>I'm a software engineer</p>
+                <p className='text-gray-700 py-2'>I am a software engineer</p>
                 <p className='text-gray-700 py-2'>I have spent a while wearing many hats, playing many different roles and gigs on my journey to
                     becoming a graduand. I have built this portfolio site to show off some of the skills I've gained 
-                    and projects I'm working on.
+                    and projects I am working on.
                 </p>
                 <p className='text-gray-700 py-2'>
-                    Of all the roles I've worked, I enjoyed development most and would really love to explore it and 
+                    Of all the roles I have worked, I enjoyed development most and would really love to explore it and 
                     further  enhance my skills and gain more experience so as to do my part and use my skills, talents and abilities
                     to chance the world as software developed by an individual or team really does have the ability to grow to the extent it 
                     in hands across the world
