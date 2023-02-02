@@ -6,10 +6,10 @@ const About = () => {
         <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
             <div className='col-span-2'>
                 <p className='py-4 uppercase text-2xl tracking-widest text-[#545454]'>About</p>
-                <h2 className='py-4'>Who am I</h2>
+                <h2 className='py-4'>Who am I?</h2>
                 <p className='text-gray-700 py-2'>I am a software engineer</p>
                 <p className='text-gray-700 py-2'>I have spent a while wearing many hats, playing many different roles and gigs on my journey to
-                    becoming a graduand. I have built this portfolio site to show off some of the skills I've gained 
+                    becoming a graduand. I have built this portfolio site to show off some of the skills I&apos;ve gained 
                     and projects I am working on.
                 </p>
                 <p className='text-gray-700 py-2'>
