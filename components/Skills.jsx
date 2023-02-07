@@ -7,10 +7,11 @@ import{SiFirebase, SiMysql, SiNextdotjs, SiPostgresql, SiTailwindcss} from 'reac
 
 const Skills = () => {
   return (
-    <div className='w-full lg:h-screen p-2'>
+    <div className='w-full lg:h-screen2 p-2'>
         <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
-            <p> Skills</p>
+            <p className='py-4 uppercase text-2xl tracking-widest text-[#545454]'> Skills</p>
             <h2>What I can do</h2>
+            <h2>Presentation Tier</h2>
             <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
 
                 <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
