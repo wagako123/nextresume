@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import portfolio from '../public/projects/photosite.png'
+import portfolio from '../public/projects/portfolio.png'
 
 const Projects = () => {
   return (
