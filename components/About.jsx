@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const About = () => {
@@ -18,8 +19,9 @@ const About = () => {
                     to chance the world as software developed by an individual or team really does have the ability to grow to the extent it 
                     in hands across the world
                 </p>
+                <Link href='/#Projects'>
                 <p className='text-gray-700 underline cursor-pointer'>check out some of my latest projects</p>
-
+                </Link>
             </div>
             <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
                 <img className='rounded-xl' src='https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80' alt='/' />
