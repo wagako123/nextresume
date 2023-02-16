@@ -1,9 +1,21 @@
+import Link from 'next/link'
 import React from 'react'
 import { AiOutlineMail } from 'react-icons/ai'
 import { BsPersonLinesFill } from 'react-icons/bs'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 
 const Contact = () => {
+    const downloadResume =()=>{
+        fetch('projects/Resume.pdf'). then (response =>{
+        response.blob().then(blob=>{
+            const fileURL= window.URL.createObjectURL(blob);
+            let alink =document.createElement('a');
+            alink.href=fileURL;
+            alink.download='projects/Resume.pdf';
+            alink.click();
+        })
+        })
+    }
   return (
     <div id='Contacts' className='w-full lg:h-screen'>
         <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
@@ -19,24 +31,32 @@ const Contact = () => {
                         <div>
                             <h2 className='py-4'>Brian Muturi</h2>
                             <p className='font-bold'>Software developer</p>
-                            <p className='py-4'>I am available for part time, fulltime on premise anf remote roles</p>
+                            <p className='py-4'>I am available for part time, fulltime on premise and remote roles</p>
                         </div>
                     
                     <div>
                         <p>Connect with me</p>
                         <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
+                        
                         <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
-                            <FaLinkedinIn/>
+                        <Link href='https://linkedin.com/in/brian-muturi-b42405266'><FaLinkedinIn/></Link>
                         </div>
+                        
+                        <Link href='https://github.com/wagako123'>
                         <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
                             <FaGithub/>
                         </div>
+                        </Link>
+                        <Link href='https://brianwagako@gmail.com'>
                         <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
                             <AiOutlineMail/>
                         </div>
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
+                        </Link>
+                        
+                        <div onClick={downloadResume} className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
                             <BsPersonLinesFill/>
                         </div>
+
                         </div>
                         </div>
                     </div>
