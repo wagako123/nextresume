@@ -14,6 +14,17 @@ const Navbar = () => {
   const [navBg, setNavBg]= useState('#ecf0f3');
   const [linkColor, setLinkColor] = useState('#1f2937');
   const router=useRouter;
+  const downloadResume =()=>{
+    fetch('projects/Resume.pdf'). then (response =>{
+    response.blob().then(blob=>{
+        const fileURL= window.URL.createObjectURL(blob);
+        let alink =document.createElement('a');
+        alink.href=fileURL;
+        alink.download='projects/Resume.pdf';
+        alink.click();
+    })
+    })
+}
 
   useEffect(()=>{
     if(
@@ -109,16 +120,25 @@ const Navbar = () => {
             <div className='pt-10'>
               <p className='uppercase tracking-widest text-gray-400' > let&apos;s connect</p>
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500'>
-                <FaLinkedinIn />
-                </div>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500'>
-                <FaGithub />
-                </div><div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500'>
-                <AiOutlineMail />
-                </div><div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500'>
-                <BsFillPersonLinesFill />
-                </div>
+              <Link href='https://linkedin.com/in/brian-muturi-b42405266'>
+                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
+                            <FaLinkedinIn/>
+                        </div>
+                        </Link>
+                        <Link href='https://github.com/wagako123'>
+                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
+                            <FaGithub/>
+                        </div>
+                        </Link>
+                        <Link href='https://brianwagako@gmail.com'>
+                        <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
+                            <AiOutlineMail/>
+                        </div>
+                        </Link>
+                        
+                        <div onClick={downloadResume} className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
+                          <BsFillPersonLinesFill/>
+                        </div>
                 
               </div>
             </div>
