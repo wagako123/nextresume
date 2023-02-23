@@ -2,13 +2,15 @@ import Image from 'next/image'
 import React from 'react'
 import {RiRadioButtonFill} from 'react-icons/ri' 
 import Link from 'next/link'
+import portfolio from '/public/projects/portfolio.jpg'
 
 const Photo = () => {
   return (
     <div className='w-full'>
       <div className='w-screen  h-[30vh] lg:h-[40vh] relative'>
         <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10'/>
-        
+        <Image className='absolute' layout='fill' objectFit='cover' src={portfolio} alt='/'/>
+
         
         <div className='absolute top-[60%]  text-white z-10 p-2'>
           <h2 className='py-2'>Photography portfolio</h2>

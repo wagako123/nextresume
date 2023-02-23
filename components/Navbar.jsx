@@ -5,6 +5,7 @@ import {AiOutlineClose, AiOutlineMail, AiOutlineMenu} from 'react-icons/ai'
 import {FaGithub, FaLinkedinIn} from 'react-icons/fa'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import { useRouter } from 'next/router'
+import {BG} from '/public/assets/correctbg.png'
 
 
 const Navbar = () => {
@@ -58,7 +59,7 @@ const Navbar = () => {
      className={ shadow? 'fixed w-full h-20 shadow-xl z-{100}':'fixed w-full h-20 z-{100}'}>
       <div className='flex justify-between items-center w-full h-full px-2 xl:px-16'>
         <Link href='/'>
-        <Image src='/../public/assets/correctbg.png' alt='/' width='80' height='30'/>
+        <Image src={BG} alt='/' width='80' height='30'/>
         </Link>
         <div>
           <ul style={{color:`${linkColor}`}} className='hidden md:flex'>
@@ -89,7 +90,7 @@ const Navbar = () => {
           <div>
             <div className='flex w-full items-center justify-between'>
               <Link href='/'>
-              <Image onClick={()=>setNav(false)} src='/../public/assets/correctbg.png' alt='/' width='150' height='80'/>
+              <Image onClick={()=>setNav(false)} src='/public/assets/correctbg.png' alt='/' width='150' height='80'/>
               </Link>
               <div onClick={handleNav} className=' rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
                 <AiOutlineClose />
