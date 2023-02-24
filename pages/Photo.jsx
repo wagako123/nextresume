@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import {RiRadioButtonFill} from 'react-icons/ri' 
 import Link from 'next/link'
-import portfolio from '/public/projects/portfolio.jpg'
+import portfolio from '/public/assets/logowbg.png'
 
 const Photo = () => {
   return (
