@@ -27,9 +27,10 @@ const Dynamics = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>I made this website for a client </p>
+          <div className='pb-3'>
           <Link href="https://shelterzone.co.ke"><button className='px-8 py-2 mt-4'>Site </button></Link>
-          <Link href="https://github.com/wagako123/photoporfolio"><button className='px-8 py-2 mt-4'>Code </button></Link>
-
+          <Link href="https://github.com/wagako123/shelterzones"><button className='px-8 py-2 mt-4'>Code </button></Link>
+          </div>
           
         </div>
         <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
