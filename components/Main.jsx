@@ -29,7 +29,7 @@ const Main = () => {
                     a motivated attitude and a variety of powerful skills. Eager to
                     learn and grow.</p>
                     <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-                        <Link href='https://linkedin.com/in/brian-muturi-b42405266'>
+                        <Link href='https://linkedin.com/in/brian-muturi-332183245'>
                         <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
                             <FaLinkedinIn/>
                         </div>

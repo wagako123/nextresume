@@ -121,7 +121,7 @@ const Navbar = () => {
             <div className='pt-10'>
               <p className='uppercase tracking-widest text-gray-400' > let&apos;s connect</p>
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-              <Link href='https://linkedin.com/in/brian-muturi-b42405266'>
+              <Link href='https://linkedin.com/in/brian-muturi-332183245'>
                         <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
                             <FaLinkedinIn/>
                         </div>
